@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Class example</title>
+</head>
+<body>
+	
+	<script src="https://fb.me/react-0.14.7.js"></script>
+    <script src="https://fb.me/react-dom-0.14.7.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+	<!--script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/6.1.19/browser.min.js"></script--> <!--Some problem in this version of babel-core-->
+
+	</script>
+	<script type="text/babel">
+		class App extends React.Component{
+			render(){
+				let txt = this.props.txt
+				return <h1>{txt}</h1>
+			}
+		}
+
+		App.propTypes = {
+			txt: React.PropTypes.string,
+			cat: React.PropTypes.number.isRequired
+		}
+
+		App.defaultProps = {
+			txt: "default txt"
+		}
+
+		ReactDOM.render(
+			<App txt="this is the txt value" cat="{5}"/>,
+			document.body
+		);
+	</script>
+</body>
+</html>

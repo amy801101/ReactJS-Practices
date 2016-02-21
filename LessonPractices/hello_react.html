@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hello React v0.14.0</title>
+</head>
+<body>
+	
+	<script src="https://fb.me/react-0.14.7.js"></script>
+    <script src="https://fb.me/react-dom-0.14.7.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+	<!--script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/6.1.19/browser.min.js"></script--> <!--Some problem in this version of babel-core-->
+
+	<script charset="utf-8">
+		ReactDOM.render(
+			React.createElement('h1', {style: {color: "red"}}, 'Hello React.'),
+			document.body
+		);
+	</script>
+	<script type="text/babel">
+		ReactDOM.render(
+			<h1>Hello React by jsx.</h1>,
+			document.body
+		);
+	</script>
+</body>
+</html>

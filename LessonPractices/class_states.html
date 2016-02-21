@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Class example</title>
+</head>
+<body>
+	
+	<script src="https://fb.me/react-0.14.7.js"></script>
+    <script src="https://fb.me/react-dom-0.14.7.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+	<!--script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/6.1.19/browser.min.js"></script--> <!--Some problem in this version of babel-core-->
+
+	</script>
+	<script type="text/babel">
+		class App extends React.Component{
+			constructor(){
+				super();
+				this.state = {
+					txt: 'this is the state txt',
+					cat: 0
+				}
+			}
+			update(e){
+				this.setState({txt:e.target.value})
+			}
+			render(){
+				return(
+				<div> 
+					<input type="text" onChange={this.update.bind(this)}/>
+					<h1>{this.state.txt}</h1>
+				</div>
+				);
+			}
+		}
+		/*  
+			Q: 问下为什么在同一个component下面有的地方可以直接用this关键字，有的地方却要先绑定this呢?
+			A: bind(this)就是让this指向obj。
+			当你去掉.bind(this)，你会发现根本是undefined，为什么呢？因为this指向的是window。
+			也就是说自定义的函数是取不到this的值的。
+			应该在ES6入门那本书里面，不过我只是浏览了一下，最近才用上ES6的，不是很好懂感觉javascript。
+		*/
+		ReactDOM.render(
+			<App/>,
+			document.body
+		);
+	</script>
+</body>
+</html>

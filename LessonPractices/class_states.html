@@ -33,17 +33,17 @@
 				);
 			}
 		}
+		
+		ReactDOM.render(
+			<App/>,
+			document.body
+		);
 		/*  
 			Q: 问下为什么在同一个component下面有的地方可以直接用this关键字，有的地方却要先绑定this呢?
 			A: bind(this)就是让this指向obj。
 			当你去掉.bind(this)，你会发现根本是undefined，为什么呢？因为this指向的是window。
 			也就是说自定义的函数是取不到this的值的。
-			应该在ES6入门那本书里面，不过我只是浏览了一下，最近才用上ES6的，不是很好懂感觉javascript。
 		*/
-		ReactDOM.render(
-			<App/>,
-			document.body
-		);
 	</script>
 </body>
 </html>

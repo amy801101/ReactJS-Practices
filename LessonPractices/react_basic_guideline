@@ -1,0 +1,31 @@
+* React: virtual dom
+* 切component
+* component: constructor, render, JSX
+* state, props, component
+* Dom上的值 v.s. view controller上的值：one way binding(parent->children, children->parent)
+* life cycle
+http://javascript.tutorialhorizon.com/2014/09/13/execution-sequence-of-a-react-components-lifecycle-methods/
+
+
+
+相關資源
+*
+http://inder.com.tw/2016%E6%8E%A8%E8%96%A6%E9%96%B1%E8%AE%80%EF%BC%8D%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0react/
+
+*
+https://egghead.io/lessons/react-hello-world-first-component
+
+*
+http://javascript.tutorialhorizon.com/2014/09/13/execution-sequence-of-a-react-components-lifecycle-methods/
+
+*
+https://scotch.io/tutorials/learning-react-getting-started-and-concepts 
+
+*
+https://blog.oyanglul.us/javascript/react-cookbook-mini.html
+
+* Angular 2 versus React: There Will Be Blood
+https://medium.freecodecamp.com/angular-2-versus-react-there-will-be-blood-66595faafd51?gi=31b2cb24b7a5
+
+* ES6 (React.createClass() v.s. React.Component)
+https://hackmd.io/p/4JlFcJKOe#/3
